@@ -1,2 +1,80 @@
 # Walmart-Sales-Forecasting
 Machine learning project for predicting Walmart weekly sales to optimize operations and inventory.
+Accurately forecasting Walmart weekly sales using multivariate time series models, feature engineering, and machine learning to support operational decision-making and inventory optimization.
+
+# 📊 Project Overview
+This project implements both univariate and multivariate time series forecasting pipelines to predict weekly sales at the store-department level for Walmart, incorporating:
+
+✅ Lag features and rolling statistics
+
+✅ External regressors (holidays, promotions, temperature, fuel price, unemployment)
+
+✅ Machine learning models including XGBoost, Random Forest, and Prophet
+
+The objective is to provide actionable insights to enhance inventory management, reduce stockouts, and improve promotional timing.
+
+
+# 🚀 Highlights
+
+✅ Multivariate time series forecasting with external regressors (holidays, promotions, CPI, fuel price, weather)
+
+✅ 10+ lag features, rolling statistics, and holiday decomposition to capture seasonal effects
+
+✅ Model portfolio: XGBoost, Random Forest, Prophet, Linear Regression, ARIMA
+
+✅ Hyperparameter tuning with GridSearchCV and SHAP value analysis for interpretability
+
+✅ Delivered actionable insights to optimize stock levels, reduce stockouts, and align promotional timing
+
+# 📦 Data Sources
+
+Kaggle: Walmart Sales Forecast Dataset
+
+File	Description	Rows x Columns
+features.csv	Economic indicators, promotions, holidays	8,190 x 12
+
+stores.csv	Store metadata (type, size)	45 x 3
+
+train.csv	Historical weekly sales	421,570 x 5
+
+test.csv	Evaluation dataset	115,064 x 4
+
+# ⚙️ Methodology
+# 📐 Feature Engineering
+Created lag features, rolling means, standard deviations, min/max windows
+
+Temporal decomposition: week, month, year, holiday indicators
+
+Incorporated promotions, markdowns, CPI, unemployment, and fuel prices
+
+# 🤖 Models Applied
+
+Model	R² Score	RMSE	MAE
+Linear Regression	0.902	7,142.25	2,798.20
+Random Forest	0.949	5,161.36	2,210.34
+XGBoost	0.961	4,316.12	1,825.57
+
+Hyperparameter tuning with GridSearchCV
+
+Residual diagnostics and SHAP-based feature interpretation
+
+# 📊 Key Findings
+
+Store size, holiday flags, and select promotions are primary sales drivers
+
+Economic indicators (fuel price, CPI) show weaker direct influence
+
+Complex models (XGBoost) capture non-linear trends and outperform baselines
+
+# 🎯 Business Impact
+
+✔ More accurate demand forecasting
+
+✔ Optimized inventory management
+
+✔ Reduced stockouts and overstock scenarios
+
+✔ Improved alignment with promotional and seasonal peaks
+
+
+

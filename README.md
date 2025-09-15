@@ -107,11 +107,15 @@ GridSearchCV tuning improved Random Forest and XGBoost performance.
 
 # 📊 Key Findings
 
-Store size, holiday flags, and select promotions are primary sales drivers
+Store size & type: Larger stores (Type A) consistently drive higher sales.
 
-Economic indicators (fuel price, CPI) show weaker direct influence
+Holiday peaks: Thanksgiving, Black Friday, and Christmas dominate weekly sales.
 
-Complex models (XGBoost) capture non-linear trends and outperform baselines
+Seasonality: Back-to-school (week 22) is a strong but overlooked driver.
+
+Post-season dips: January consistently shows reduced sales after holiday peaks.
+
+Economic indicators: Fuel price, CPI, and unemployment have weaker short-term influence.
 
 # 🎯 Business Impact
 
@@ -119,9 +123,11 @@ Complex models (XGBoost) capture non-linear trends and outperform baselines
 
 ✔ Optimized inventory management
 
-✔ Reduced stockouts and overstock scenarios
+✔ Reduced stockouts & overstocks
 
-✔ Improved alignment with promotional and seasonal peaks
+✔ Improved promotional alignment with seasonal peaks
+
+✔ Supports investor confidence by reducing forecasting uncertainty
 
 
 

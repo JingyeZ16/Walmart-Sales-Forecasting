@@ -1,6 +1,41 @@
 # Walmart-Sales-Forecasting
-Machine learning project for predicting Walmart weekly sales to optimize operations and inventory.
-Accurately forecasting Walmart weekly sales using multivariate time series models, feature engineering, and machine learning to support operational decision-making and inventory optimization.
+
+# 📖 Background & Problem
+
+Walmart, as one of the largest retailers in the world, faces strong seasonal fluctuations in sales. Peaks around Thanksgiving, Black Friday, and Christmas are followed by sharp declines in January.
+
+If these seasonal patterns are not properly anticipated, Walmart risks:
+
+Overstocking or stockouts during peak seasons
+
+Missed revenue targets, negatively impacting stock prices and investor confidence
+
+Inefficient inventory management and supply chain disruptions
+
+Accurate forecasting of weekly sales is therefore critical to:
+
+Plan stock levels and reduce waste
+
+Align promotional campaigns with demand
+
+Forecast revenue and guide investment decisions
+
+Maintain investor trust by meeting projections.
+
+# 🎯 Aim
+
+The goal of this project is to predict weekly sales at the store–department level using a combination of time series forecasting and machine learning models.
+
+With accurate predictions, Walmart can:
+
+Identify seasonal demand patterns
+
+Protect against revenue loss
+
+Improve inventory and promotional planning
+
+Support long-term strategic investments
+
 
 # 📊 Project Overview
 This project implements both univariate and multivariate time series forecasting pipelines to predict weekly sales at the store-department level for Walmart, incorporating:

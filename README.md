@@ -48,6 +48,24 @@ This project implements both univariate and multivariate time series forecasting
 
 The objective is to provide actionable insights to enhance inventory management, reduce stockouts, and improve promotional timing.
 
+# ✅ Solution Overview
+
+This project develops a multivariate time series forecasting pipeline that integrates:
+
+Lag features & rolling statistics to capture trends and seasonality
+
+External regressors (holidays, markdowns, fuel price, CPI, unemployment, temperature)
+
+Machine learning models (XGBoost, Random Forest, Prophet, Linear Regression, ARIMA)
+
+The final models provide actionable insights to:
+
+Optimize inventory management
+
+Reduce stockouts and overstock risks
+
+Improve promotional timing
+
 
 # 🚀 Highlights
 

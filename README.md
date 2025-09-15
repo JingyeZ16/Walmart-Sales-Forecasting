@@ -75,23 +75,35 @@ train.csv	Historical weekly sales	421,570 x 5
 test.csv	Evaluation dataset	115,064 x 4
 
 # ⚙️ Methodology
+
 # 📐 Feature Engineering
-Created lag features, rolling means, standard deviations, min/max windows
 
-Temporal decomposition: week, month, year, holiday indicators
+Lag features, rolling means, rolling std, min/max windows
 
-Incorporated promotions, markdowns, CPI, unemployment, and fuel prices
+Holiday and week-of-year decomposition
+
+Encoded categorical variables (store type, department)
+
+Incorporated markdowns, CPI, unemployment, fuel price, temperature
 
 # 🤖 Models Applied
 
-Model	R² Score	RMSE	MAE
-Linear Regression	0.902	7,142.25	2,798.20
-Random Forest	0.949	5,161.36	2,210.34
-XGBoost	0.961	4,316.12	1,825.57
+| Model             | R²    | RMSE     | MAE      |
+| ----------------- | ----- | -------- | -------- |
+| Linear Regression | 0.902 | 7,142.25 | 2,798.20 |
+| Random Forest     | 0.949 | 5,161.36 | 2,210.34 |
+| XGBoost           | 0.961 | 4,316.12 | 1,825.57 |
+
 
 Hyperparameter tuning with GridSearchCV
 
-Residual diagnostics and SHAP-based feature interpretation
+Residual diagnostics and SHAP-based feature interpretation.
+
+Residual diagnostics confirmed non-stationary behavior; handled via differencing & log transforms.
+
+Exponential Smoothing also performed well on certain departments.
+
+GridSearchCV tuning improved Random Forest and XGBoost performance.
 
 # 📊 Key Findings
 
